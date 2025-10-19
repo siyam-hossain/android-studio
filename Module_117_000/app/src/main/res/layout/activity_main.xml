@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="#e9e8ff"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="32sp"
+                android:textColor="#6849ff"
+                android:textStyle="bold"
+
+                android:text="Portfolio"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/siyamhossain"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#6849ff"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#d5d4ff"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:padding="20dp"
+                    android:lineSpacingExtra="3.5dp"
+                    android:textColor="@color/black"
+                    android:text="Name: Siyam Hossain \nAge: 22 \nEmail: siyam.cybersoul@gmail.com \nRole: Software Engineer"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:text="See more..."
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="18sp"
+                    android:gravity="center"
+                    android:textColor="#6849ff"
+                    android:textStyle="bold"
+                    android:text="Experience at"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="90"
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="30"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="Language"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:text="C\nC++\nJava\nJavascript\nPython\nSQL"
+                        android:textColor="@color/black"
+                        android:lineSpacingExtra="3sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="30"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="Tools"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Git\nGithub\nReadmi.so\nVScode\nAndroid Studio\nBash terminal\nLinux Command"
+                        android:textColor="@color/black"
+                        android:lineSpacingExtra="3sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="30"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="Framework"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:text="HTML\nCSS\nTailwindCSS\nAPI\nReactJS\nDjango"
+                        android:textColor="@color/black"
+                        android:lineSpacingExtra="3sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Connect with Me"
+                    android:gravity="center"
+                    android:textColor="#6849ff"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        >
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/github"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Github"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        >
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/facebook"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Facebook"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        >
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/linkedin"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Linkedin"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        >
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/telegram"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Telegram"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Review"
+                    android:gravity="center"
+                    android:textColor="#6849ff"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:textSize="16sp"
+                    android:hint="write here...."
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:padding="10dp"
+                    android:background="#d5d4ff"
+                    android:layout_marginTop="20dp"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
