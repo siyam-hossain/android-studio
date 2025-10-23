@@ -11,6 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Module_117_000">
+
+
+<!--        this is the boss who decide which ManiActivity will launch first: mean give permission-->
+<!--        here MainActivity assign as Head of all Activity: mean it launch first-->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,6 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
