@@ -15,6 +15,8 @@
 
 <!--        this is the boss who decide which ManiActivity will launch first: mean give permission-->
 <!--        here MainActivity assign as Head of all Activity: mean it launch first-->
+
+<!--        android:name=".MainActivity2"-->
         <activity
             android:name=".MainActivity"
             android:exported="true">

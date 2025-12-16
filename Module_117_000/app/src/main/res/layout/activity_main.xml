@@ -5,83 +5,74 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity"
     android:background="#e9e8ff"
     android:orientation="vertical"
-    >
+    tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
-            >
+            android:padding="20dp">
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="32sp"
-                android:textColor="#6849ff"
-                android:textStyle="bold"
-
                 android:text="Portfolio"
-                />
+                android:textColor="#6849ff"
+                android:textSize="32sp"
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profile_image"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/siyamhossain"
-                app:civ_border_width="2dp"
-                app:civ_border_color="#6849ff"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                />
+                android:layout_marginTop="20dp"
+                android:src="@drawable/siyamhossain"
+                app:civ_border_color="#6849ff"
+                app:civ_border_width="2dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_marginTop="20dp"
-                >
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#d5d4ff"
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:padding="20dp"
                     android:lineSpacingExtra="3.5dp"
-                    android:textColor="@color/black"
+                    android:padding="20dp"
                     android:text="Name: Siyam Hossain \nAge: 22 \nEmail: siyam.cybersoul@gmail.com \nRole: Software Engineer"
-                    />
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:textSize="16sp"
                     android:text="See more..."
-                    />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
                     android:layout_marginTop="18sp"
                     android:gravity="center"
-                    android:textColor="#6849ff"
-                    android:textStyle="bold"
                     android:text="Experience at"
-                    />
+                    android:textColor="#6849ff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -90,83 +81,80 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal"
-                android:weightSum="90"
-                >
+                android:weightSum="90">
+
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="30"
-                    >
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
                         android:text="Language"
                         android:textColor="@color/black"
-                        />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="16sp"
                         android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="3sp"
                         android:text="C\nC++\nJava\nJavascript\nPython\nSQL"
                         android:textColor="@color/black"
-                        android:lineSpacingExtra="3sp"
-                        />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="30"
-                    >
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
                         android:text="Tools"
                         android:textColor="@color/black"
-                        />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="16sp"
                         android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="3sp"
                         android:text="Git\nGithub\nReadmi.so\nVScode\nAndroid Studio\nBash terminal\nLinux Command"
                         android:textColor="@color/black"
-                        android:lineSpacingExtra="3sp"
-                        />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="30"
-                    >
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
                         android:text="Framework"
                         android:textColor="@color/black"
-                        />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="16sp"
                         android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="3sp"
                         android:text="HTML\nCSS\nTailwindCSS\nAPI\nReactJS\nDjango"
                         android:textColor="@color/black"
-                        android:lineSpacingExtra="3sp"
-                        />
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -175,125 +163,115 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="Connect with Me"
                     android:gravity="center"
+                    android:text="Connect with Me"
                     android:textColor="#6849ff"
-                    />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="100"
-                    >
+                    android:weightSum="100">
 
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="25"
-                        android:orientation="vertical"
                         android:layout_marginTop="20dp"
-                        >
+                        android:layout_weight="25"
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            android:src="@drawable/github"
                             android:layout_gravity="center"
-                            />
+                            android:src="@drawable/github" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:gravity="center"
                             android:text="Github"
-                            android:gravity="center"
-                            android:textSize="16sp"
                             android:textColor="@color/black"
-                            />
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="25"
-                        android:orientation="vertical"
                         android:layout_marginTop="20dp"
-                        >
+                        android:layout_weight="25"
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            android:src="@drawable/facebook"
                             android:layout_gravity="center"
-                            />
+                            android:src="@drawable/facebook" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:gravity="center"
                             android:text="Facebook"
-                            android:gravity="center"
-                            android:textSize="16sp"
                             android:textColor="@color/black"
-                            />
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="25"
-                        android:orientation="vertical"
                         android:layout_marginTop="20dp"
-                        >
+                        android:layout_weight="25"
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            android:src="@drawable/linkedin"
                             android:layout_gravity="center"
-                            />
+                            android:src="@drawable/linkedin" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
+                            android:gravity="center"
                             android:text="Linkedin"
-                            android:gravity="center"
-                            android:textSize="16sp"
                             android:textColor="@color/black"
-                            />
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="25"
-                        android:orientation="vertical"
                         android:layout_marginTop="20dp"
-                        >
+                        android:layout_weight="25"
+                        android:orientation="vertical">
+
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            android:src="@drawable/telegram"
                             android:layout_gravity="center"
-                            />
+                            android:src="@drawable/telegram" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:text="Telegram"
                             android:gravity="center"
-                            android:textSize="16sp"
+                            android:text="Telegram"
                             android:textColor="@color/black"
-                            />
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -302,37 +280,34 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="Review"
                     android:gravity="center"
+                    android:text="Review"
                     android:textColor="#6849ff"
-                    />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:background="#d5d4ff"
+                    android:gravity="top|start"
                     android:hint="write here...."
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
-                    android:padding="10dp"
-                    android:background="#d5d4ff"
-                    android:layout_marginTop="20dp"
-                    android:gravity="top|start"
-                    android:inputType="textMultiLine"
-                    android:scrollbars="vertical"
-                    />
+                    android:textSize="16sp" />
 
                 <Button
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:text="Submit"
-                    android:gravity="center"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:textStyle="bold"
-                    />
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -340,8 +315,6 @@
 
 
     </ScrollView>
-
-
 
 
 </LinearLayout>
