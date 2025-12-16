@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     ImageView myImage;
-    Button buttonShow, buttonHide;
+    Button buttonShow, buttonHide, bToast;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         myImage = findViewById(R.id.myImage);
         buttonShow = findViewById(R.id.buttonShow);
         buttonHide = findViewById(R.id.buttonHide);
+        bToast = findViewById(R.id.bToast);
 
         buttonShow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 myImage.setVisibility(View.GONE);
+            }
+        });
+        bToast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"This is Toast", Toast.LENGTH_LONG).show();
             }
         });
 
