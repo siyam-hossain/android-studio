@@ -36,17 +36,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                VideoPlayer.videoUrl = "https://www.youtube.com/embed/6T9HV0a5Wmk";
+                VideoPlayer.videoId = "PwkiImf-TTY";
 
                 Intent myIntent = new Intent(MainActivity.this, VideoPlayer.class);
                 startActivity(myIntent);
             }
         });
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                VideoPlayer.videoUrl = "https://www.youtube.com/embed/8bTaJ3PMGR4";
+
+                VideoPlayer.videoId = "Az-mGR-CehY";
 
                 Intent myIntent = new Intent(MainActivity.this, VideoPlayer.class);
                 startActivity(myIntent);
@@ -57,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                VideoPlayer.videoUrl = "https://www.youtube.com/embed/wgRJCQNxZ_M";
+
+                VideoPlayer.videoId = "72QAAOaYW2M";
 
                 Intent myIntent = new Intent(MainActivity.this, VideoPlayer.class);
                 startActivity(myIntent);
