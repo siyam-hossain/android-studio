@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+    <ImageView
+        android:id="@+id/canvasImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/inna"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="10dp"
+        />
+
+    <!--        youtube player here-->
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/yt_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:autoPlay="false"
+        android:layout_marginBottom="10dp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <!--        Album 1 start-->
+            <LinearLayout
+                android:id="@+id/album1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:background="#191919"
+                >
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inna1"
+                    android:clipToOutline="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="INNA - More Than Friends"
+                        android:textColor="#F36363"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:maxLines="5"
+                        android:text="Official music video by INNA performing the single &quot;More Than
+                        Friends&quot; 2013"
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_character"
+                        android:text="Duration: 3:27"
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--        Album 1 end-->
+
+            <!--        Album 2 end-->
+            <LinearLayout
+                android:id="@+id/album2"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:background="#191919"
+                >
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inna2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="INNA - Bad Boys | Exclusive Online Video"
+                        android:textColor="#F36363"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:maxLines="3"
+                        android:text="Exclusive online video by INNA performing the song &quot;Bad Boys&quot;2016\nConcerts: booking@innaofficial.com
+    "
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_character"
+                        android:text="Duration: 3:09"
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--        Album 2 end-->
+
+            <!--        Album 3 start-->
+            <LinearLayout
+                android:id="@+id/album3"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:background="#191919"
+                >
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inna3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="INNA feat. Yandel - In Your Eyes | Official Music Video"
+                        android:textColor="#F36363"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:maxLines="3"
+                        android:text="Official music video by INNA performing the single &quot;In Your Eyes&quot; featuring Yandel. 2013"
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_character"
+                        android:text="Duration: 3:15"
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--        Album 3 end-->
+
+            <!--        Album 4 start-->
+            <LinearLayout
+                android:id="@+id/album4"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:background="#191919"
+                >
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inna4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="INNA - Yalla | Official Music Video"
+                        android:textColor="#F36363"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:maxLines="3"
+                        android:text="Official music video by INNA performing the single &quot;Yalla&quot; 2015"
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_character"
+                        android:text="Duration: 3:16"
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--        Album 4 end-->
+
+            <!--        Album 5 start-->
+            <LinearLayout
+                android:id="@+id/album5"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:background="#191919"
+                >
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inna5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="INNA - Shining Star [Online Video]"
+                        android:textColor="#F36363"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:maxLines="5"
+                        android:text="Official music video by INNA performing the single &quot;Shining Star&quot; 2013"
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:justificationMode="inter_character"
+                        android:text="Duration: 2:59"
+                        android:textColor="#CCDCDB"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--        Album 5 end-->
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>
