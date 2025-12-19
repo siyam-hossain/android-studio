@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tvFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="facebook"
+            android:textSize="28sp"
+            android:textColor="#1877F2"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/menu"
+
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/search"
+            android:layout_toStartOf="@id/menu"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/add"
+            android:layout_toStartOf="@id/search"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/siyam"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/siyam"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="165dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/pName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siyam Hossain"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/profile"
+            android:layout_below="@id/cover"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="152 followers"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/profile"
+            android:layout_below="@id/pName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="140 following"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/followers"
+            android:layout_below="@id/pName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34 posts"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/following"
+            android:layout_below="@id/pName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Professional dashboard"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#1877F2"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to story"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:backgroundTint="#1877F2"
+        android:textColor="@color/white"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="#F6F6F6"
+            android:text="Next"
+            android:textSize="20sp"
+            android:backgroundTint="#FF3F3F"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
