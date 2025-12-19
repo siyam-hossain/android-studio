@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    android:layout_margin="20dp"
+    android:background="@color/white"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Bottom Curved"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/bottom_curved"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Bottom Shade"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/bottom_shade"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Circle Colored"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/circle_colored"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Circle Transparent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/circle_transparent"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Orange Button"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/orange_button"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Three Color"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/three_color"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+</LinearLayout>
