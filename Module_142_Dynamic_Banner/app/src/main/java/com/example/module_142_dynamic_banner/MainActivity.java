@@ -48,11 +48,34 @@ public class MainActivity extends AppCompatActivity {
 
         adLayout = findViewById(R.id.adLayout);
 
+        loadBannerAd();
 
-// Create a new ad view.
+
+
+
+
+    }
+
+
+    public void loadBannerAd(){
+        // Create a new ad view.
         adView = new AdView(this);
         adView.setAdUnitId(getString(R.string.Banner_ads));
+        adView.setAdSize(getAdSize());
 
+
+// Replace ad container with new ad view.
+        adLayout.removeAllViews();
+        adLayout.addView(adView);
+
+
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+    }
+
+
+    public AdSize getAdSize(){
         Display display = getWindowManager().getDefaultDisplay();
         DisplayMetrics outMetrics = new DisplayMetrics();
         display.getMetrics(outMetrics);
@@ -65,19 +88,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 // Request an anchored adaptive banner with a width of 360.
-        adView.setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, adWidth));
-
-// Replace ad container with new ad view.
-        adLayout.removeAllViews();
-        adLayout.addView(adView);
-
-
-
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
-
-
+       return AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, adWidth);
     }
+
 
 
 
@@ -96,5 +109,4 @@ public class MainActivity extends AppCompatActivity {
         // Drop reference to the banner ad.
         adView = null;
     }
-
 }
