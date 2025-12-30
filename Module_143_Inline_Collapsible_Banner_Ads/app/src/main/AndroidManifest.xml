@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Module_143_Inline_Collapsible_Banner_Ads">
         <activity
+            android:name=".Collapsable_Banner"
+            android:exported="false" />
+        <activity
             android:name=".Inline_Adaptive_Banner"
             android:exported="false" />
         <activity

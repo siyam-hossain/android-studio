@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doesn't work inside scroll view"
+
+            android:layout_above="@id/inlineBanner"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/inlineBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collapsible"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
