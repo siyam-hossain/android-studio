@@ -1,12 +1,9 @@
 package com.example.module_143_inline_collapsible_banner_ads;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.View;
 import android.view.WindowMetrics;
-import android.widget.Button;
 import android.widget.FrameLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -15,44 +12,34 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.ads.mediation.admob.AdMobAdapter;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
-public class Inline_Adaptive_Banner extends AppCompatActivity {
+public class Collapsable_Banner extends AppCompatActivity {
+
 
     FrameLayout ad_view_container;
-
-    Button collapsable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.inline_adaptive_banner);
+        setContentView(R.layout.collapsable_banner);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-
-        collapsable = findViewById(R.id.collapsable);
-
         initialize();
         loadBanner();
 
-        collapsable.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent inline = new Intent(Inline_Adaptive_Banner.this, Collapsable_Banner.class);
-                startActivity(inline);
-            }
-        });
+
 
     }
-
     public void initialize(){
         new Thread(
                 () -> {
@@ -79,13 +66,22 @@ public class Inline_Adaptive_Banner extends AppCompatActivity {
 
         AdView adView = new AdView(this);
         adView.setAdUnitId(getString(R.string.banner_ads));
-        adView.setAdSize(AdSize.getCurrentOrientationInlineAdaptiveBannerAdSize(this, getAdWidth()));
+
+        //this make collapsible
+        adView.setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, getAdWidth()));
 
         ad_view_container.removeAllViews();
         ad_view_container.addView(adView);
 
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
-    }
+        Bundle extras = new Bundle();
+        extras.putString("collapsible", "bottom");
 
+        AdRequest adRequest = new AdRequest
+                .Builder()
+                .addNetworkExtrasBundle(AdMobAdapter.class, extras)
+                .build();
+
+        adView.loadAd(adRequest);
+
+    }
 }
