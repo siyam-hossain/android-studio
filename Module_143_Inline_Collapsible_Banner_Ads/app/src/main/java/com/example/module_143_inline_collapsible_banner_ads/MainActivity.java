@@ -1,8 +1,11 @@
 package com.example.module_143_inline_collapsible_banner_ads;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
+import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     FrameLayout ad_view_container;
+    Button inlineBanner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +37,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        inlineBanner = findViewById(R.id.inlineBanner);
+
         initialize();
         loadBanner();
+
+        inlineBanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inline = new Intent(MainActivity.this, Inline_Adaptive_Banner.class);
+                startActivity(inline);
+            }
+        });
 
 
 
