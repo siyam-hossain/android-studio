@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical"
+
+    android:layout_margin="50dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="কেনা দাম কত?"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/edBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Buying Price"
+        android:inputType="numberDecimal"
+
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="কত টাকায় বিক্রি করেছেন?"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/edSell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Selling Price"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="হিসাব করুন"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+</LinearLayout>
