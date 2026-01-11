@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OddEven"
+
+
+    android:layout_margin="50dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Odd-Even"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_above="@id/edNum"
+        android:layout_marginBottom="30dp"
+        />
+    <EditText
+        android:id="@+id/edNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="Enter a number"
+        android:inputType="number"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Calculate"
+        android:layout_below="@id/edNum"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
