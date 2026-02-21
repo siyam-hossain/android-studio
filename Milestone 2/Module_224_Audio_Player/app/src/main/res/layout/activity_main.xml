@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/nav"
+        >
+
+<!--        scroll linear-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+    <!--        card 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+
+                android:background="@drawable/border_radius"
+                android:layout_marginBottom="10dp"
+
+                >
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/al_1"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/image_radius"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nasheed Ya Adheeman - Ahmed Bukhatir نشيد يا عظيما - أحمد بوخاطر - Arabic Music"
+
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#islamic_nasheed #islamic_song"
+
+                        android:maxLines="2"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgPlay1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/outline_play_circle_24"
+                    android:layout_gravity="center"
+
+                    android:tag="NOT_PLAYING"
+                    />
+
+            </LinearLayout>
+
+            <!--        card 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+
+                android:background="@drawable/border_radius"
+                android:layout_marginBottom="10dp"
+
+                >
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/al_1"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/image_radius"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nasheed Ya Adheeman - Ahmed Bukhatir نشيد يا عظيما - أحمد بوخاطر - Arabic Music"
+
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#islamic_nasheed #islamic_song"
+
+                        android:maxLines="2"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgPlay2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/outline_play_circle_24"
+                    android:layout_gravity="center"
+
+                    android:tag="NOT_PLAYING"
+                    />
+
+            </LinearLayout>
+
+
+            <!--        card 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+
+                android:background="@drawable/border_radius"
+                android:layout_marginBottom="10dp"
+
+                >
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/al_1"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/image_radius"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nasheed Ya Adheeman - Ahmed Bukhatir نشيد يا عظيما - أحمد بوخاطر - Arabic Music"
+
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#islamic_nasheed #islamic_song"
+
+                        android:maxLines="2"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgPlay3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/outline_play_circle_24"
+                    android:layout_gravity="center"
+
+                    android:tag="NOT_PLAYING"
+                    />
+
+            </LinearLayout>
+
+            <!--        card 4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+
+                android:background="@drawable/border_radius"
+                android:layout_marginBottom="10dp"
+
+                >
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/al_1"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/image_radius"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nasheed Ya Adheeman - Ahmed Bukhatir نشيد يا عظيما - أحمد بوخاطر - Arabic Music"
+
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#islamic_nasheed #islamic_song"
+
+                        android:maxLines="2"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgPlay4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/outline_play_circle_24"
+                    android:layout_gravity="center"
+
+                    android:tag="NOT_PLAYING"
+                    />
+
+            </LinearLayout>
+
+
+            <!--        card 5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+
+                android:background="@drawable/border_radius"
+                android:layout_marginBottom="10dp"
+
+                >
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/al_1"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/image_radius"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nasheed Ya Adheeman - Ahmed Bukhatir نشيد يا عظيما - أحمد بوخاطر - Arabic Music"
+
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#islamic_nasheed #islamic_song"
+
+                        android:maxLines="2"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgPlay5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/outline_play_circle_24"
+                    android:layout_gravity="center"
+
+                    android:tag="NOT_PLAYING"
+                    />
+
+            </LinearLayout>
+
+
+            <!--        card 6-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+
+                android:background="@drawable/border_radius"
+                android:layout_marginBottom="10dp"
+
+                >
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/al_1"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/image_radius"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nasheed Ya Adheeman - Ahmed Bukhatir نشيد يا عظيما - أحمد بوخاطر - Arabic Music"
+
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#islamic_nasheed #islamic_song"
+
+                        android:maxLines="2"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgPlay6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/outline_play_circle_24"
+                    android:layout_gravity="center"
+
+                    android:tag="NOT_PLAYING"
+                    />
+
+            </LinearLayout>
+
+
+            <!--        card 7-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+
+                android:background="@drawable/border_radius"
+                >
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/al_1"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/image_radius"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nasheed Ya Adheeman - Ahmed Bukhatir نشيد يا عظيما - أحمد بوخاطر - Arabic Music"
+
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#islamic_nasheed #islamic_song"
+
+                        android:maxLines="2"
+                        />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgPlay7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/outline_play_circle_24"
+                    android:layout_gravity="center"
+
+                    android:tag="NOT_PLAYING"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+<!--    bottom nav-->
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+
+
+        android:background="@drawable/top2corner_radius"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/outline_account_circle_24"
+
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/outline_home_24"
+
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/outline_add_circle_24"
+
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
