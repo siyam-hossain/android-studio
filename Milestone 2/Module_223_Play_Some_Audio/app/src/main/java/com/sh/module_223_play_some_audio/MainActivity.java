@@ -1,5 +1,6 @@
 package com.sh.module_223_play_some_audio;
 
+import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -16,10 +17,11 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn1, btn2;
+    Button btn1, btn2, btnM;
 
     MediaPlayer mediaPlayer;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,15 +36,29 @@ public class MainActivity extends AppCompatActivity {
 
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
+        btnM = findViewById(R.id.btnM);
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                if(mediaPlayer != null){
+                    mediaPlayer.release();
+                }
+
                 //when we use local file we use media player . create
                 mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.majbor);
                 mediaPlayer.start();
+            }
+        });
+
+        btnM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mediaPlayer != null){
+                    mediaPlayer.release();
+                }
             }
         });
 
@@ -51,11 +67,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                if (mediaPlayer != null){
+                    mediaPlayer.release();
+                }
+
                 mediaPlayer = new MediaPlayer();
 
                 try {
-                    mediaPlayer.setDataSource("https://file-examples.com/storage/fe68d2756669781429b3e3f/2017/11/file_example_MP3_700KB.mp3");
+                    mediaPlayer.setDataSource("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
 
+//                    mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+//                        @Override
+//                        public void onPrepared(MediaPlayer mp) {
+//                            mp.start();
+//                        }
+//                    });
+//
+//                    mediaPlayer.prepareAsync();
                     mediaPlayer.prepare();
                     mediaPlayer.start();
 
