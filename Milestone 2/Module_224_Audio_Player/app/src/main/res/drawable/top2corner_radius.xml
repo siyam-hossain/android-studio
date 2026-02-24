@@ -4,10 +4,10 @@
     <solid
         android:color="#403963"/>
 
-    <stroke
-        android:color="#2A2A2A"
+<!--    <stroke-->
+<!--        android:color="#2A2A2A"-->
 
-        />
+<!--        />-->
 
     <corners
         android:topLeftRadius="12dp"
