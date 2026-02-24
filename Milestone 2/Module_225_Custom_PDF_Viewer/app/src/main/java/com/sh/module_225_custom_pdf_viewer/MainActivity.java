@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     PDFView pdfView;
     LottieAnimationView animationView;
 
+    public static String assetName = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +42,9 @@ public class MainActivity extends AppCompatActivity {
         pdfView.setVisibility(View.INVISIBLE);
         animationView.setVisibility(View.VISIBLE);
 
-        pdfView.fromAsset("cover_page.pdf")
+
+
+        pdfView.fromAsset(assetName)
                 .onLoad(new OnLoadCompleteListener() {
                     @Override
                     public void loadComplete(int i) {

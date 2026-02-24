@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Module_225_Custom_PDF_Viewer">
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+
+
+
+
+        <activity
+            android:name=".Dashboard"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
