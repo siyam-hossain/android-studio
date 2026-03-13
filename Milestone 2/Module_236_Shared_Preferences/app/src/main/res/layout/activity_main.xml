@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/parentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:padding="50dp"
+        >
+        <EditText
+            android:id="@+id/edText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Your Name Here"
+            android:gravity="center"
+            android:padding="20dp"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Save Data"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:background="#4CAF50"
+            android:layout_marginTop="10dp"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+
+        android:layout_below="@id/parentContainer"
+        >
+
+        <Button
+            android:id="@+id/loadData"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:text="Load Data"
+            android:textSize="18sp"
+            android:background="#FF0000"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
