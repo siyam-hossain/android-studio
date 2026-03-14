@@ -8,27 +8,36 @@
     tools:context=".MainActivity"
 
     android:orientation="vertical"
-
-    android:layout_margin="50dp"
-
     >
-
-
-<!--    helps to load other xml file-->
-
-    <include
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        layout="@layout/profile_page"
+        android:orientation="vertical"
+        android:id="@+id/inflate_layout"
+        >
+
+
+
+    </LinearLayout>
+
+
+    
+    <Button
+        android:id="@+id/add"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Layout"
         />
 
     <Button
+        android:id="@+id/remove"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click Me"
-        android:textSize="18sp"
-
+        android:text="Remove Layout"
         />
+
 
 </LinearLayout>
