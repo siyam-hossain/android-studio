@@ -14,7 +14,7 @@
         android:layout_height="200dp"
         >
         <ImageView
-
+            android:id="@+id/imageView"
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -24,6 +24,8 @@
             />
 
         <TextView
+            android:id="@+id/title"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -36,6 +38,8 @@
             android:textStyle="bold"
 
             android:textColor="#00FF01"
+            android:maxLines="2"
+            android:ellipsize="end"
             />
 
     </RelativeLayout>
@@ -54,6 +58,9 @@
             >
 
             <TextView
+                android:id="@+id/des"
+
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -62,15 +69,16 @@
                 android:text="Meta and TikTok let harmful content rise after evidence outrage drove engagement, say whistleblowers"
                 android:gravity="start"
                 android:textSize="18sp"
-                android:maxLines="2"
-                android:ellipsize="end"
 
+                android:textColor="#847E7C"
                 />
 
         </LinearLayout>
     </ScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabButton"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

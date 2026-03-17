@@ -4,7 +4,10 @@ import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.pdf.PdfDocument;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -101,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             String category = hash.get("cat");
             String imageURL = hash.get("image_url");
             String title_ = hash.get("title");
-            String destination = hash.get("des");
+            String description = hash.get("des");
 
 
             Picasso.get().load(imageURL)
@@ -111,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
             cat.setText(category);
             title.setText(title_);
-            des.setText(destination);
+            des.setText(description);
 
 
 
@@ -123,6 +126,13 @@ public class MainActivity extends AppCompatActivity {
             layItem.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+                    Page2.Title = title_;
+                    Page2.Description = description;
+
+
+                    Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
+                    Page2.Mybitmap = bitmap;
 
                     startActivity(new Intent(MainActivity.this, Page2.class));
 
@@ -146,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
         hashMap.put("cat", "Tech");
         hashMap.put("image_url", "https://ichef.bbci.co.uk/news/1024/cpsprodpb/25a6/live/9833eb40-1efb-11f1-9120-a910fc22c6ac.png.webp");
         hashMap.put("title", "TikTok and Meta risked safety to win algorithm arms race, whistleblowers say");
-        hashMap.put("des", "Social media giants made decisions which allowed more harmful content on people's feeds, after internal research into their algorithms showed how outrage fuelled engagement, whistleblowers told the BBC.");
+        hashMap.put("des", "Social media giants made decisions which allowed more harmful content on people's feeds, after internal research into their algorithms showed how outrage fuelled engagement, whistleblowers told the BBC. More than a dozen whistleblowers and insiders have laid bare how the companies took risks with safety on issues including violence, sexual blackmail and terrorism as they battled for users' attention. An engineer at Meta, which owns Facebook and Instagram, described how he had been told by senior management to allow more \"borderline\" harmful content - which includes misogyny and conspiracy theories - in user's feeds to compete with TikTok. \"They sort of told us that it's because the stock price is down,\" the engineer said. A TikTok employee gave the BBC rare access to the company's internal dashboards of user complaints - as well as other evidence of how staff had been instructed to priorities several cases involving politicians over a series of reports of harmful posts featuring children. Decisions were being made to \"maintain a strong relationship\" with political figures to avoid threats of regulation or bans, not because of the risks to users, the TikTok staffer said. The whistleblowers who spoke to the BBC documentary, Inside the Rage Machine, offer a close-up view of how the industry responded following the explosive growth of TikTok, whose highly engaging algorithm for recommending short videos upended social media, leaving rivals scrambling to catch up. A senior Meta researcher, Matt Motyl, said the company's competitor to TikTok, Instagram Reels, was launched in 2020 without sufficient safeguards. Internal research shared with the BBC showed comments on Reels had significantly higher prevalence of bullying and harassment, hate speech, and violence or incitement than elsewhere on Instagram.");
         arrayList.add(hashMap);
     }
 
