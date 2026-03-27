@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
     AdView adView;
     ProgressBar progressBar;
 
+    // these things reduce the same server request while the data already fetched and want to show on different activity  
+    public static boolean SHOW_ADS = false;
+
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
 
                         if (response.contains("showAd")){
 
+                            SHOW_ADS = true;
+
                             adView.setVisibility(VISIBLE);
                             progressBar.setVisibility(GONE);
 
@@ -85,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
                         }
                         else{
                             adView.setVisibility(GONE);
+
+                            SHOW_ADS = false;
                         }
 
                     }
