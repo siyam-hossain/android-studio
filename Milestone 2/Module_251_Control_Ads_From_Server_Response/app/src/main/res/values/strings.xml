@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Module_251_Control_Ads_From_Server_Response</string>
+    <string name="app_name">Module 251</string>
+
+    <string name="Banner_ads">ca-app-pub-3940256099942544/9214589741</string>
 </resources>
