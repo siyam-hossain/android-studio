@@ -23,6 +23,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
 
     public static int numberOfCard;
+
+    JSONArray productArray;
 
 
     @Override
@@ -55,7 +58,36 @@ public class MainActivity extends AppCompatActivity {
         gridView.setAdapter(myAdapter);
 
 
+        //==================== api call here ====================================
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url = "https://dummyjson.com/products";
 
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+
+                try {
+
+                    productArray = response.getJSONArray("products");
+                    numberOfCard = productArray.length();
+
+                    gridView.setAdapter(new MyAdapter());
+
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
+
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+
+            }
+        });
+
+        queue.add(jsonObjectRequest);
+        //=========================================================================
 
 
 
@@ -99,53 +131,30 @@ public class MainActivity extends AppCompatActivity {
             imageView = myView.findViewById(R.id.imageView);
 
 
+            //======================================================
+            try {
+                JSONObject jsonObject = productArray.getJSONObject(position);
 
-            //============================(volley)====================================
-            RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
-            String url = "https://dummyjson.com/products";
+                String title = jsonObject.getString("title");
+                String price_ = jsonObject.getString("price");
+                String rating_ = jsonObject.getString("rating");
+                String thumb = jsonObject.getString("thumbnail");
 
-
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-                @Override
-                public void onResponse(JSONObject response) {
-
-                    try {
-
-                        JSONArray products = response.getJSONArray("products");
-
-                        numberOfCard = products.length();
-
-                        for (int i=0; i<numberOfCard; i++){
-
-                            JSONObject jsonObject = products.getJSONObject(i);
-
-                            String title = jsonObject.getString("title");
-                            String price_ = jsonObject.getString("price");
-                            String thumbUrl = jsonObject.getString("thumbnail");
-                            String rating_ = jsonObject.getString("rating");
+                pdName.setText(title);
+                price.setText(price_);
+                rating.setText(rating_);
 
 
-                            pdName.setText(title);
-                            price.setText(price_);
-                            rating.setText(rating_);
-                        }
+                Picasso.get()
+                        .load(thumb)
+                        .placeholder(null)
+                        .into(imageView);
 
 
-                    } catch (JSONException e) {
-
-                        throw new RuntimeException(e);
-                    }
-
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError volleyError) {
-
-                }
-            });
-
-            queue.add(jsonObjectRequest);
-            //============================================================================
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
+            //======================================================
 
 
 
